@@ -1,0 +1,8 @@
+<h1>Dashboard</h1>
+<% if (error) { %><p><%= error %></p><% } %>
+<p>Selamat datang <%= user ? user.nama : '-' %></p>
+<ul>
+<li><a href='/penilaian'>Modul Penilaian</a></li>
+<li><a href='/admin/rbac'>RBAC</a></li>
+</ul>
+<form method='post' action='/logout'><button>Logout</button></form>
